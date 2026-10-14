@@ -170,7 +170,7 @@
 
     .carousel-track {
       display: flex;
-      transition: transform 0.6s cubic-bezier(0.25, 0.1, 0.25, 1);
+     transition: transform 0.6s cubic-bezier(0.25, 0.1, 0.25, 1);
       will-change: transform;
     }
 
@@ -703,7 +703,7 @@
       const totalSlides = slides.length;
       let currentIndex = 0;
       let autoplayTimer = null;
-      const AUTOPLAY_INTERVAL = 4500;
+      const AUTOPLAY_INTERVAL = 1250;
 
       function updateCarousel() {
         track.style.transform = `translateX(-${currentIndex * 100}%)`;
